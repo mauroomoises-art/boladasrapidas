@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BOLADAS RÁPIDAS — Boladas de Moz</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="logo"><img src="imagens/logo.png" alt="logo"><div><b>BOLADAS RÁPIDAS</b><span>Boladas de Moz • Compra e Vende Rápido</span></div></div>
+<input id="pesquisa" placeholder="🔍 Pesquisar produtos, vendedores..."><nav><button onclick="show('home')">Início</button><button onclick="show('reels')">Reels</button><button onclick="show('chat')">Chat</button><button onclick="show('perfil')">Perfil</button><button onclick="show('definicoes')">Definições</button><button class="dono" onclick="show('painel')">👑 Painel do Chefe</button></nav></header>
+
+<div class="trust">✅ 100% VERIFICADO &nbsp;|&nbsp; 🔒 PAGAMENTO SEGURO &nbsp;|&nbsp; ⭐ VENDEDORES AVALIADOS &nbsp;|&nbsp; 👑 SUPORTE DO DONO LUCIFER O'BLACK</div>
+
+<main>
+<!-- HOME PRODUTOS -->
+<section id="home" class="page active">
+<div class="hero"><h1>Compra e Vende Rápido em Moçambique 🇲🇿</h1><p>Feito em <b>Inhambane — Massinga</b> por <b>Lucifer O'Black</b> • Ao entrar, segues automaticamente o Criador.</p>
+<div class="cats"><button class="cat active">Todos</button><button class="cat">Telemóveis</button><button class="cat">Carros</button><button class="cat">Casas</button><button class="cat">Roupas</button><button class="cat">Electrónica</button><button class="cat">Comida</button></div>
+<label>Filtrar preço: <select id="filtroPreco"><option value="0">Todos</option><option value="10000">Até 10.000 MT</option><option value="50000">Até 50.000 MT</option></select></label></div>
+<div class="grid" id="grid"></div>
+<div class="seguro"><h2>🛡️ Compra Segura em 3 Passos</h2><p>1️⃣ Escolhe o produto &nbsp; 2️⃣ Fala com o vendedor no chat &nbsp; 3️⃣ Paga com segurança e recebe</p></div>
+<div class="depo"><h2>❤️ O que dizem em Massinga / Inhambane</h2><p>⭐⭐⭐⭐⭐ "Comprei meu telefone em 1 dia, vendedor honesto!" — Ana, Massinga</p><p>⭐⭐⭐⭐⭐ "O Dono resolveu meu problema em minutos." — João, Inhambane</p></div>
+</section>
+
+<!-- REELS -->
+<section id="reels" class="page"><h2>🎬 Reels</h2><div class="reel"><img src="imagens/produto1.jpg"><p>🔥 Bolada do dia: iPhone 13 Pro — 45.000 MT</p><button onclick="like(this)">❤️ Curtir</button> <button onclick="show('chat')">💬 Comentar</button></div></section>
+
+<!-- CHAT -->
+<section id="chat" class="page"><h2>💬 Conversas</h2><div class="chatbox"><div class="convs"><div class="conv active">👑 Lucifer O'Black <span>online</span></div><div class="conv">Ana — iPhone</div></div><div class="msgs"><div id="mensagens"><p><b>Lucifer:</b> Bem-vindo ao Boladas Rápidas! 🙏</p></div><div class="botoes"><button onclick="modo('Texto')">✍️ Texto</button><button onclick="modo('Vídeo')">📹 Vídeo</button><button onclick="modo('Áudio')">🎤 Áudio</button><button onclick="toggleEmoji()">😀 Figurinha Emojis</button></div><div id="emojis" class="emojis hidden"><b>Recentes:</b> 😀 😍 🔥 <br><b>Sorrisos:</b> 😀 😂 😍 🥰 😎 <br><b>Animais:</b> 🐶 🐱 🦁 <br><b>Comida:</b> 🍔 🍕 🥭 <br><b>Viagens:</b> ✈️ 🚗 🏖️ <br><b>Objetos:</b> 📱 💻 ⌚ <br><b>Símbolos:</b> ❤️ ⭐ ✅ <br><b>Bandeiras:</b> 🇲🇿 🇵🇹 🇿🇦</div><div class="enviar"><input id="msg" placeholder="Escreve aqui..."><button onclick="enviar()">Enviar</button></div><p id="modoAtual">Modo: Texto</p></div></div></section>
+
+<!-- PERFIL / BIO -->
+<section id="perfil" class="page"><div class="perfil"><img src="imagens/logo.png"><h2>Lucifer O'Black ✅ 👑</h2><p>Criador e Dono do Boladas Rápidas • De <b>Inhambane — Massinga, Moçambique</b></p><p>⭐⭐⭐⭐⭐ <b>4.9</b> — 2.347 votos • <b>O que as pessoas acham:</b> Honesto, rápido e resolve problemas!</p><div>Seguidores: <b id="seguidores">128.540</b> • Toda a gente que entra segue automaticamente o Dono.</div><p>⭐ Avaliar Honestidade: <span id="estrelas"><button onclick="avaliar(1)">★</button><button onclick="avaliar(2)">★</button><button onclick="avaliar(3)">★</button><button onclick="avaliar(4)">★</button><button onclick="avaliar(5)">★</button></span></p><button onclick="show('chat')">💬 Mensagem</button></div></section>
+
+<!-- DEFINIÇÕES ESTILO FACEBOOK -->
+<section id="definicoes" class="page"><h2>⚙️ Definições — estilo Facebook</h2><div class="defs"><aside><button>Conta</button><button>Informações Pessoais</button><button>Senha e Segurança</button><button>Privacidade</button><button>Idioma e Região</button><button>Notificações</button><button>Tema e Cor do Fundo</button><button>Ajuda e Suporte</button></aside><div><h3>Sobre o Criador</h3><p><b>Lucifer O'Black</b> — Criador do Boladas Rápidas<br>De Inhambane — Massinga, Moçambique ✅</p><h3>🎨 Escolher Cor do Fundo</h3><div class="cores"><button style="background:#6d00ff" onclick="mudaCor('#6d00ff')"></button><button style="background:#0099ff" onclick="mudaCor('#0099ff')"></button><button style="background:#00b35c" onclick="mudaCor('#00b35c')"></button><button style="background:#ff2d55" onclick="mudaCor('#ff2d55')"></button><button style="background:#ff7a00" onclick="mudaCor('#ff7a00')"></button><button style="background:#111" onclick="mudaCor('#111')"></button></div><label><input type="checkbox" id="escuro"> Modo Escuro</label></div></div></section>
+
+<!-- PAINEL DO DONO -->
+<section id="painel" class="page"><h2>👑 Painel do Chefe — Só o Dono</h2><p>Utilizadores: <b>12.480</b> | Produtos: <b>3.214</b> | Vendas: <b>1.098</b> | Denúncias: <b>3</b></p><h3>Dar / Tirar Selo</h3><div id="selos"></div><h3>🚨 Resolver Problemas</h3><div id="problemas"></div></section>
+</main>
+
+<button class="vender" onclick="vender()">+ Vender Agora</button>
+<nav class="bottom"><button onclick="show('home')">🏠</button><button onclick="show('reels')">🎬</button><button onclick="vender()">➕</button><button onclick="show('chat')">💬</button><button onclick="show('perfil')">👤</button></nav>
+<footer>© 2026 Boladas Rápidas • Feito em Inhambane — Massinga, por Lucifer O'Black • Reportar Problema ao Dono</footer>
+<script src="script.js"></script></body></html>
